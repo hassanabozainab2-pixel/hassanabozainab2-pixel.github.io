@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.janbbait.app",
+      "sha256_cert_fingerprints": [
+        "13:A7:17:4C:64:8E:14:D4:C3:4F:F7:4D:1C:7E:80:A2:5A:52:6D:8B:B5:E6:50:70:37:6B:E1:B9:99:7F:9F:5A"
+      ]
+    }
+  }
+]
