@@ -2,54 +2,102 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#126b4d">
-<title>جنب بيتك | عروض المحلات</title>
-<meta name="description" content="شاهد صفحة المحل وعروضه أو افتح تطبيق جنب بيتك.">
+<title>البدوي | جنب بيتك</title>
+<meta name="description" content="صفحة البدوي للبقالة في إسنا — المنتجات والأسعار وطرق التواصل على جنب بيتك.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="جنب بيتك">
-<meta property="og:title" content="شاهد عروض المحل على جنب بيتك">
-<meta property="og:description" content="صفحة المحل والمنتجات ووسائل التواصل — جنب بيتك">
+<meta property="og:title" content="البدوي — بقالة | جنب بيتك">
+<meta property="og:description" content="شاهد منتجات وأسعار البدوي وتواصل مع المحل مباشرة.">
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(145deg,#eaf7f0,#f7fbf8 55%,#fff);color:#173c30;display:grid;place-items:center;padding:22px}
-.card{width:min(100%,460px);background:#fff;border:1px solid #dcebe3;border-radius:26px;padding:30px 24px;text-align:center;box-shadow:0 18px 55px #174b3518}
-.logo{width:74px;height:74px;margin:0 auto 16px;border-radius:23px;background:#126b4d;color:white;display:grid;place-items:center;font-size:34px}
-h1{font-size:25px;margin:8px 0 12px;color:#126b4d}p{font-size:16px;line-height:1.9;color:#587166;margin:0 0 22px}
-.btn{display:block;text-decoration:none;padding:16px 18px;border-radius:15px;font-size:17px;font-weight:bold;margin-top:12px}
-.primary{background:#126b4d;color:white}.secondary{background:#edf6f1;color:#126b4d;border:1px solid #cfe4d8}
-.note{font-size:13px;margin-top:20px;color:#82958c}
+*{box-sizing:border-box}
+body{margin:0;background:#f4f8f5;color:#183b2d;font-family:Tahoma,Arial,sans-serif}
+.top{background:linear-gradient(135deg,#0d5940,#16835d);color:#fff;padding:18px 16px 24px}
+.top a{color:#fff;text-decoration:none;font-weight:bold}
+.wrap{max-width:760px;margin:auto;padding:15px}
+.hero{width:100%;height:210px;object-fit:cover;border-radius:20px;margin-top:-7px;background:#e4eee7}
+.card{background:#fff;border:1px solid #e1ebe4;border-radius:19px;padding:17px;margin:13px 0;box-shadow:0 5px 16px #164b3010}
+.title{font-size:25px;margin:0 0 8px;color:#126b4d}
+.meta{color:#62756a;font-size:13px;line-height:1.9}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
+.contacts a,.appbtn{display:block;text-align:center;padding:14px 8px;border-radius:13px;background:#e8f4ee;color:#126b4d;text-decoration:none;font-weight:bold}
+.contacts .wa{background:#e5f7eb;color:#087b42}
+.heading{font-size:18px;color:#126b4d;margin:3px 0 12px}
+.catalog{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.product{background:#fff;border:1px solid #e3ebe5;border-radius:15px;padding:12px 9px;text-align:center;min-width:0}
+.product-icon{height:58px;display:grid;place-items:center;font-size:31px}
+.product-name{font-size:13px;font-weight:bold;margin:6px 0;color:#214332}
+.price{font-size:13px;font-weight:bold;color:#a27617;margin-top:7px}
+.note{font-size:11px;color:#7b8c82;line-height:1.8}
+.appbtn{background:#126b4d;color:white;margin-top:12px}
+.home{display:none}
+.home.show{display:block}
+.profile.show{display:block}
+.profile{display:block}
+@media(min-width:540px){.catalog{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style>
 </head>
 <body>
-<main class="card">
-<div class="logo">🏪</div>
-<h1 id="heading">افتح صفحة العميل على جنب بيتك</h1>
-<p id="description">اختار: شاهد صفحة العميل ومنتجاته، أو اذهب إلى تطبيق جنب بيتك.</p>
-<a class="btn primary" id="customerLink" href="#">اضغط هنا لمشاهدة عروض العميل</a>
-<a class="btn secondary" id="appLink" href="https://hassanabozainab2-pixel.github.io/">اذهب إلى التطبيق</a>
-<div class="note">جنب بيتك — كل الخدمات والعروض جنب بيتك ❤️</div>
+<header class="top"><a href="https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app">جنب بيتك</a><div style="font-size:12px;opacity:.9;margin-top:5px">كل اللي تحتاجه حواليك</div></header>
+
+<main class="wrap profile" id="badawyPage">
+<img class="hero" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1100&q=85" alt="صورة بقالة">
+<section class="card">
+<h1 class="title">البدوي — بقالة</h1>
+<div class="meta">بقالة · إسنا — شارع أحمد عرابي</div>
+<div class="contacts">
+<a href="tel:01147973350">☎ اتصال بالبدوي</a>
+<a class="wa" href="https://wa.me/201147973350" target="_blank" rel="noopener">واتساب مباشر</a>
+</div>
+</section>
+<section class="card">
+<h2 class="heading">🛒 منتجات وأسعار البدوي</h2>
+<div class="catalog">
+<article class="product"><div class="product-icon">🍚</div><div class="product-name">أرز معبأ — كيلو</div><div class="price">35 جنيه</div></article>
+<article class="product"><div class="product-icon">🍚</div><div class="product-name">أرز سائب — كيلو</div><div class="price">27 جنيه</div></article>
+<article class="product"><div class="product-icon">🍬</div><div class="product-name">سكر — كيلو</div><div class="price">34 جنيه</div></article>
+<article class="product"><div class="product-icon">🍝</div><div class="product-name">مكرونة معبأة — كيلو</div><div class="price">33 جنيه</div></article>
+<article class="product"><div class="product-icon">🌾</div><div class="product-name">دقيق — كيلو</div><div class="price">28 جنيه</div></article>
+<article class="product"><div class="product-icon">🫘</div><div class="product-name">فول معبأ — كيلو</div><div class="price">62 جنيه</div></article>
+<article class="product"><div class="product-icon">🫘</div><div class="product-name">عدس معبأ — كيلو</div><div class="price">68 جنيه</div></article>
+<article class="product"><div class="product-icon">🫒</div><div class="product-name">زيت عباد الشمس — لتر</div><div class="price">110 جنيه</div></article>
+<article class="product"><div class="product-icon">🫒</div><div class="product-name">زيت ذرة — لتر</div><div class="price">127 جنيه</div></article>
+<article class="product"><div class="product-icon">🥛</div><div class="product-name">لبن معبأ — لتر</div><div class="price">33 إلى 58 جنيه</div></article>
+<article class="product"><div class="product-icon">🥛</div><div class="product-name">لبن سائب — كيلو</div><div class="price">15 إلى 40 جنيه</div></article>
+<article class="product"><div class="product-icon">🧀</div><div class="product-name">جبنة بيضاء — كيلو</div><div class="price">70 إلى 180 جنيه</div></article>
+<article class="product"><div class="product-icon">🧀</div><div class="product-name">جبنة رومي — كيلو</div><div class="price">150 إلى 350 جنيه</div></article>
+<article class="product"><div class="product-icon">🧈</div><div class="product-name">مسلى صناعي — كيلو</div><div class="price">45 إلى 140 جنيه</div></article>
+<article class="product"><div class="product-icon">🍵</div><div class="product-name">شاي العروسة — 40 جم</div><div class="price">9 إلى 15 جنيه</div></article>
+<article class="product"><div class="product-icon">🍵</div><div class="product-name">شاي ليبتون — 40 جم</div><div class="price">11 إلى 20 جنيه</div></article>
+</div>
+<p class="note">الأسعار استرشادية وقد تتغير. يُرجى التأكد من السعر والتوفر من المحل قبل الشراء.</p>
+</section>
+<a class="appbtn" href="https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app">افتح تطبيق جنب بيتك وشاهد باقي المحلات</a>
+<p class="note" style="text-align:center">جنب بيتك — محلات وخدمات وعروض قريبة منك ❤️</p>
+</main>
+
+<main class="wrap home" id="homePage">
+<section class="card" style="text-align:center">
+<div style="font-size:42px">🏪</div>
+<h1 class="title">جنب بيتك</h1>
+<p class="meta">محلات ومنتجات وخدمات قريبة منك… في مكان واحد</p>
+<a class="appbtn" href="https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app">اضغط هنا لفتح التطبيق</a>
+</section>
 </main>
 <script>
 (function(){
- const params=new URLSearchParams(location.search);
- const id=params.get('business')||'';
- const customerLink=document.getElementById('customerLink');
- const appLink=document.getElementById('appLink');
- const heading=document.getElementById('heading');
- const desc=document.getElementById('description');
- if(id){
-   customerLink.href='https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app?business='+encodeURIComponent(id);
- } else {
-   customerLink.href='https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app';
- }
- appLink.href='https://hassanabozainab2-pixel.github.io/';
- if(id==='ffa532c9-e7a5-45ff-bf07-910361de3a00'){
-   heading.textContent='البدوي — بقالة';
-   desc.textContent='إسنا — شارع أحمد عرابي. اختار مشاهدة صفحة البدوي أو فتح تطبيق جنب بيتك.';
-   customerLink.textContent='اضغط هنا لمشاهدة عروض البدوي';
+ const id=new URLSearchParams(location.search).get('business')||'';
+ const badawy='ffa532c9-e7a5-45ff-bf07-910361de3a00';
+ if(id===badawy){
    document.title='البدوي | جنب بيتك';
-   // افتح صفحة النشاط مباشرة بدل خطوة وسيطة إضافية.
-   setTimeout(()=>window.location.replace(customerLink.href),120);
+   document.getElementById('badawyPage').classList.add('show');
+ }else if(id){
+   location.replace('https://qedaojphnxwoptitfzzk.supabase.co/functions/v1/janb-app?business='+encodeURIComponent(id));
+ }else{
+   document.getElementById('badawyPage').style.display='none';
+   document.getElementById('homePage').classList.add('show');
+   document.title='جنب بيتك | التطبيق';
  }
 })();
 </script>
